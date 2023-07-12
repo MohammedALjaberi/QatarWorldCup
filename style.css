@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  --container: 144rem;
+  --m-auto: 0 auto;
+  --white: #fff;
+  --primary: #8a1538;
+  --secondary: #eeeee4;
+  --gr-1: rgba(138, 21, 56, 0.607);
+  --gr-2: rgba(138, 21, 56, 0.665);
+  --nav: rgba(225, 225, 225, 0.045);
+  --mobile-nav: #7d3e59;
+  --count-down-bg: rgba(238, 235, 235, 0.295);
+  --timer-before-bg: rgb(218, 201, 109);
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: var(--container);
+  padding: 0 2rem;
+  margin: var(--m-auto);
+}
+#hero {
+  background: linear-gradient(var(--gr-1), var(--gr-2)),
+    url("/images/hero-image.png") no-repeat center center / cover;
+}
+.header {
+  background: var(--nav);
+  backdrop-filter: blur(10px);
+}
+.navigation {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo .logo-img {
+  width: 17rem;
+}
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+}
+.mobile-menu-icon .menu-icon {
+  font-size: 5rem;
+  color: var(--white);
+}
+.nav_list {
+  display: inline-block;
+  margin: 0 1rem;
+}
+.nav_link {
+  font-size: 1.6rem;
+  color: var(--white);
+}
+.nav_link.active {
+  position: relative;
+}
+.nav_link.active::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: rotate(45deg) translateX(-50%);
+  bottom: -1.5rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: var(--secondary);
+}
+.btn-nav {
+  margin-left: 5rem;
+}
+.btn-outline,
+.btn-primary {
+  padding: 0.6rem 2rem;
+  border: 0.2rem solid var(--secondary);
+  color: var(--white);
+  font-weight: 500;
+  border-radius: 3rem;
+  transition: all 0.5s ease-in;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+.btn-outline ion-icon,
+.btn-primary ion-icon {
+  font-size: 2.7rem;
+  --ionicon-strock-width: 4.4rem;
+}
+.btn-outline:hover,
+.btn-primary:hover {
+  border-color: var(--secondary);
+  color: var(--primary);
+  background: var(--secondary);
+  transition: all 0.5s ease-in;
+}
