@@ -115,3 +115,17 @@ body {
   background: var(--secondary);
   transition: all 0.5s ease-in;
 }
+.hero-main-container{
+  padding: 5rem;
+}
+.hero-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  align-items: center;
+}
+.hero-image{
+  text-align: center;
+}
+.hero-imag{
+  max-width: 45rem;
+}
