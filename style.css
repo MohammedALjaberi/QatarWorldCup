@@ -178,6 +178,43 @@ color: var(--secondary);
   grid-column: 1/3;
   color: var(--secondary);
 }
-
+@media(max-width:904px){
+  .mobile-menu-icon{
+    display: block;
+  }
+  .nan-menu{
+    position: absolute;
+    visibility: hidden;
+    clip-path: circle(0% at 96% -20%);
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    padding: 6rem 0 ;
+    background: var(--mobile-nav);
+    z-index: -1;
+    transition: all 0.7s ease-in-out;
+  }
+  .nan-link.active{
+    visibility: visible;
+    clip-path: circle(150% at 100% 100%);
+    transition: all 0.7s ease-in-out;
+  }
+  .nav_list{
+display: block;
+text-align: center;
+margin: 2.5rem 0 ;
+  }
+  .hero-img{
+    width: 100%;
+  }
+}
+  @media(max-width:639){
+    .hero-image{
+      grid-row: 1px;
+    }
+    .hero-img{
+      max-width: 30rem;
+    }
+  }
   
   
