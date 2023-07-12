@@ -129,3 +129,13 @@ body {
 .hero-imag{
   max-width: 45rem;
 }
+.section-heading{
+  font-size: 5rem;
+  line-height: 6rem;
+  color: var(--secondary);
+}
+.paragraph{
+  font-size: 1.6rem;
+  color: var(--secondary);
+  margin: 3rem 0;
+}
